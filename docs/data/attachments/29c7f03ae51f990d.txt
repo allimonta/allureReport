@@ -1,0 +1,36 @@
+Name
+Match
+Action
+Allow DHCP Renew
+Allow Ping
+Allow ICMP
+Allow DHCPv6
+Allow MLD
+Allow ICMPv6 Input
+Allow ICMPv6 Forward
+Allow IPSec ESP
+Allow ISAKMP
+Allow WEB
+Allow SSH
+ipv4-UDPFrom any IP  in wanTo any IP at port 68 on this device
+ipv4-ICMPFrom any IP  in wanTo any IP  on this device
+ipv4-ICMPFrom any IP  in wanTo any IP  on this device
+ipv6-UDPFrom IP fc00::/6  in wanTo IP fc00::/6 at port 546 on this device
+ipv6-ICMPFrom IP fe80::/10  in wanTo any IP  on this device
+ipv6-ICMPFrom any IP  in wanTo any IP  on this device
+ipv6-ICMPFrom any IP  in wanTo any IP  in any zone
+ipv4 & ipv6-ESPFrom any IP  in wanTo any IP  in lan
+ipv4 & ipv6-UDPFrom any IP  in wanTo any IP at port 500 in lan
+ipv4 & ipv6-TCPFrom any IP  in wanTo any IP at port 80 on this device
+ipv4 & ipv6-TCPFrom any IP  in wanTo any IP at port 22 on this device
+Accept input
+Accept input
+Accept input
+Accept input
+Accept input
+Accept input
+Accept forward
+Accept forward
+Accept forward
+Accept input
+Accept input
